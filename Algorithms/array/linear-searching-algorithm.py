@@ -14,8 +14,6 @@ location = 0
 found = False
 numArrayIndex = []
 
-for i in range(numArrayLength):
-    numArrayIndex.append(i)
 
 while location < numArrayLength:
     if numArray[location] == searchValue:
@@ -24,9 +22,14 @@ while location < numArrayLength:
     else:
         location += 1
 
+numArray.append(searchValue)
+
+for i in range(len(numArray)):
+    numArrayIndex.append(i)
+
+
 print('Index array: ', numArrayIndex)
 print('Orginal array: ', numArray)
-
 
 if found:
     print(searchValue, "found at location: ", location)

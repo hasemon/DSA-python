@@ -17,8 +17,9 @@ numArrayIndex = []
 found = False
 for location in range(numArrayLength):
     numArrayIndex.append(location)
-    if searchValue < numArray[-1]:
+    if searchValue == numArray[-1]:
         found = True
+        break
 
 
 print('Index array: ', numArrayIndex)
