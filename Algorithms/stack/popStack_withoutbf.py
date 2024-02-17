@@ -6,7 +6,7 @@ maxstk = int(input("Enter maximum size of stack: "))
 top = int(input("Enter Top of stack: "))
 
 print("Before poping")
-if maxstk < 0:
+if top <= 0:
     print("Stack Underflow")
 else:
     print("Enter elements of stack")
